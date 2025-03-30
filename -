@@ -535686,7 +535686,6 @@ getgenv().question = {
                             VirtualInputManager:SendKeyEvent(false, Enum.KeyCode[question.WalkSpeed.Options.EmoteSlot], false, game)
                         end
                     else
-                        print("xdef")
                         player.Character.Humanoid.WalkSpeed = defaultSpeed
                     end
                 end
@@ -538824,7 +538823,7 @@ function Menu:Init()
     end)
     Menu.Screen:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
         Menu.ScreenSize = Menu.Screen.AbsoluteSize
-    end)
+    end
 end
 
 getgenv().question = {
